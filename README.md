@@ -1,4 +1,4 @@
-# TicketBooker: A Scalable Ticket Booking System with C# and Modern Tooling.
+# TicketBooker: A Scalable Ticket Booking System with C# and Modern Tooling
 
 ## Selected Project
 ### Train Ticket booking Management System
@@ -124,3 +124,19 @@ In the context of our Ticket Booking Management System project, the project user
 - Notification Services: Actuators that send push notifications or other alerts to users' devices for updates, reminders, or announcements.
 - Payment Gateways: Systems or services that process payment transactions securely.
 
+## Project Properties
+Below are the platforms and software technologies we will be using to develop our project:
+### Front-end development: 
+- WPF (Windows Presentation Foundation) (version 6.0.2)
+- XAML 2019 (version 2.8.4)
+### Back-end development: 
+- RESTful Capability: ASP.NET Web API (version 5.2.0)
+- Programming language: C# (version 11)
+- Framework: .Net Framework (version 4.8)
+### Database: 
+- Microsoft SQL Server 2022 (version 16.0.4035.4)
+### IDE: 
+- Visual Studio 2022 (version 17.6.0)
+### Version Control Integration: 
+- Github
+- Git (version 3.8.3)
