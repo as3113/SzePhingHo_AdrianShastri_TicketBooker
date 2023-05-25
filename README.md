@@ -77,7 +77,7 @@ The employees of the train company would also be end users of the train ticket b
 
 - As a train operator or conductor, I want access to real-time train schedules, passenger manifests, and seat occupancy information, so that I can manage train operations effectively and provide a seamless travel experience.
 
--As a customer support representative, I want access to customer profiles, booking histories, and ticket details, so that I can provide personalized assistance, resolve customer concerns, and deliver excellent customer service.
+- As a customer support representative, I want access to customer profiles, booking histories, and ticket details, so that I can provide personalized assistance, resolve customer concerns, and deliver excellent customer service.
 
 - As a manager or administrator, I want access to comprehensive data and reports on ticket sales, passenger trends, revenue, and operational performance, so that I can make informed decisions, plan strategies, and optimize services.
 
@@ -123,4 +123,45 @@ In the context of our Ticket Booking Management System project, the project user
 - Servers: The infrastructure and hardware that host the app, store data, and handle requests and transactions.
 - Notification Services: Actuators that send push notifications or other alerts to users' devices for updates, reminders, or announcements.
 - Payment Gateways: Systems or services that process payment transactions securely.
+
+## Plan Details
+
+**Phase 1: Initial Setup and User Management**
+- Set up the development environment, including Visual Studio and necessary dependencies.
+- Implement account creation functionality, allowing users to sign up and register.
+- Develop customer login functionality for accessing personalized features.
+- Implement admin login functionality for administrative access.
+**Deadline: June 4, 2023 (2 weeks)**
+
+**Phase 2: Train Search and Booking**
+- Design the user interface for train search and booking screens.
+- Develop train search functionality, enabling users to search for available trains based on criteria such as date, time, and destination.
+- Implement class and seat selection options, allowing users to choose their preferred seating.
+- Integrate payment gateway functionality for secure online transactions.
+**Deadline: June 25, 2023 (4 weeks)**
+
+**Phase 3: Ticket Reservations and E-Tickets**
+- Implement ticket reservation functionality, allowing users to reserve selected seats.
+- Generate e-tickets with a unique code for each reservation.
+- Develop functionality for users to view their ticket reservations and booking details.
+- Create a printable PDF option for e-tickets.
+**Deadline: July 9, 2023 (2 weeks)**
+
+**Phase 4: Confirmation and Communication**
+- Set up an email service for sending confirmation emails to customers after successful bookings.
+- Develop an automated notification system to send optional alerts or updates related to bookings, such as reminders or changes in train schedules.
+**Deadline: July 23, 2023 (2 weeks)**
+
+**Phase 5: User Experience Enhancements and Polishing**
+- Implement responsive design for a seamless user experience across different devices.
+- Enhance the app's UI with visual improvements, animations, and intuitive navigation.
+- Conduct user testing and gather feedback for further enhancements and bug fixing.
+**Deadline: August 2, 2023 (1 week)**
+
+**Phase 6: Testing, Bug Fixing, and Documentation**
+- Conduct comprehensive testing, including functional, integration, and user acceptance testing.
+- Address any identified bugs or issues and ensure the app meets quality standards.
+- Create user manuals and technical documentation for reference.
+**Deadline: August 9, 2023 (1 week)**
+
 
