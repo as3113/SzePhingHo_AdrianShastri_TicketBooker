@@ -46,3 +46,15 @@ The end users of a train ticket reservation app may be from different groups of 
 - **Senior Citizens and People with Disability**: Train journeys are usually preferred by the elderly and the disabled often because trains are more accessible and convenient to them. The app should provide features like user friendly interfaces, accessibility options, available seats with priority, or special request for assistance to handle their specific needs.
 
 - **Group Travelers**: The app can provide the features such as group tickets booking, itinerary sharing, or group discounts to enhance the experience for friends, families, or groups traveling together by train. The app can allow them to book multiple tickets simultaneously, select seats to sit together, and coordinate their travel plans. 
+
+The employees of the train company would also be end users of the train ticket booking app, but their role and interaction with the app would be different from the general public users. Here are some key employee roles and how they would benefit from the app:
+
+- **Ticketing Staff**: Employees responsible for ticketing at train stations or customer service centers would use the app as a ticketing and booking tool. They would utilize features such as ticket issuance, reservation management, ticket printing, and handling customer inquiries or issues related to ticket bookings.
+
+- **Train Operators and Conductors**: Train operators and conductors would rely on the app for accessing train schedules, route information, and passenger details. The app can provide real-time updates, seat occupancy status, and passenger manifests, allowing them to efficiently manage train operations and ensure smooth passenger experiences.
+
+- **Customer Support Representatives**: Customer support representatives, either at train stations or call centers, would use the app to assist customers with queries, complaints, or ticketing issues. They would have access to customer profiles, booking histories, and ticket details, enabling them to provide personalized assistance and resolve customer concerns.
+
+- **Management and Administration**: Employees at the managerial and administrative levels would use the app for monitoring and analyzing various aspects of the train service. They can access data and reports related to ticket sales, passenger trends, revenue, and operational performance. This information helps in decision-making, planning future strategies, and optimizing services.
+
+- **Technical Support and IT Staff**: Technical support and IT employees would interact with the app from a maintenance and support perspective. They would monitor the app's performance, handle technical issues, ensure data security, and manage updates or enhancements to the app infrastructure.
