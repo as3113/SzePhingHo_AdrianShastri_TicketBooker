@@ -13,9 +13,9 @@ Based on these considerations, we propose the project title "TicketBooker: A Sca
 
 ## Project Scope
 ### Features of the selected project
-Account creation (sign up / registration)
+#### Account creation (sign up / registration)
 Users should be able to create accounts and profiles within the app. This feature enables them to store their personal information, manage bookings, track ticket history, and receive personalized recommendations or notifications.
 
-User and Admin login
+#### User and Admin login
 The user/admin login feature of the ticket booking app provides a secure and personalized access point for both customers and administrators. After creating their accounts, users can log in and access various functionalities of the app. With the login feature, customers can view their booking history, manage reservations, and receive personalized recommendations. On the other hand, administrators can access an exclusive dashboard to manage train schedules, seating arrangements, and handle customer support.
 
