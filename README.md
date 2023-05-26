@@ -1,6 +1,8 @@
 # TicketBooker: A Scalable Ticket Booking System with C# and Modern Tooling
 
 ## Selected Project
+## visual studio testing (may27)
+## testing sp and as
 ### Train Ticket booking Management System
 In this project, we will create a ticketing application for local trains. Customers can look into the app to make reservations for local trains and acquire online booking receipts. Customers can print these receipts as proof for traveling. The app comprises two accounts, one Admin account, and the other being a user account. With the help of the Admin account, the Admin can view all the booked tickets of a user. While using the application, users have to fill a ticket booking form to make the reservation.
 
@@ -148,38 +150,38 @@ Below are the platforms and software technologies we will be using to develop ou
 - Implement account creation functionality, allowing users to sign up and register.
 - Develop customer login functionality for accessing personalized features.
 - Implement admin login functionality for administrative access.
-**Deadline: June 4, 2023 (2 weeks)**
+- **Deadline: June 4, 2023 (2 weeks)**
 
 **Phase 2: Train Search and Booking**
 - Design the user interface for train search and booking screens.
 - Develop train search functionality, enabling users to search for available trains based on criteria such as date, time, and destination.
 - Implement class and seat selection options, allowing users to choose their preferred seating.
 - Integrate payment gateway functionality for secure online transactions.
-**Deadline: June 25, 2023 (4 weeks)**
+- **Deadline: June 25, 2023 (4 weeks)**
 
 **Phase 3: Ticket Reservations and E-Tickets**
 - Implement ticket reservation functionality, allowing users to reserve selected seats.
 - Generate e-tickets with a unique code for each reservation.
 - Develop functionality for users to view their ticket reservations and booking details.
 - Create a printable PDF option for e-tickets.
-**Deadline: July 9, 2023 (2 weeks)**
+- **Deadline: July 9, 2023 (2 weeks)**
 
 **Phase 4: Confirmation and Communication**
 - Set up an email service for sending confirmation emails to customers after successful bookings.
 - Develop an automated notification system to send optional alerts or updates related to bookings, such as reminders or changes in train schedules.
-**Deadline: July 23, 2023 (2 weeks)**
+- **Deadline: July 23, 2023 (2 weeks)**
 
 **Phase 5: User Experience Enhancements and Polishing**
 - Implement responsive design for a seamless user experience across different devices.
 - Enhance the app's UI with visual improvements, animations, and intuitive navigation.
 - Conduct user testing and gather feedback for further enhancements and bug fixing.
-**Deadline: August 2, 2023 (1 week)**
+- **Deadline: August 2, 2023 (1 week)**
 
 **Phase 6: Testing, Bug Fixing, and Documentation**
 - Conduct comprehensive testing, including functional, integration, and user acceptance testing.
 - Address any identified bugs or issues and ensure the app meets quality standards.
 - Create user manuals and technical documentation for reference.
-**Deadline: August 9, 2023 (1 week)**
+- **Deadline: August 9, 2023 (1 week)**
 
 
 
