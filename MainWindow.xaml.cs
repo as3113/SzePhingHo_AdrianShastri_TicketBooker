@@ -59,10 +59,18 @@ namespace TicketTest
                     {
                         if (reader.Read())
                         {
-                            // Authentication successful, open the new window or perform any desired action
-                            // For example, you can create a new instance of the window and show it
-                            AdminDashboard adminDashboard = new AdminDashboard();
-                            adminDashboard.Show();
+                            if (IsAdminEmail(tbUsername.Text))
+                            {
+                                // Authentication successful, open the new window or perform any desired action
+                                // For example, you can create a new instance of the window and show it
+                                AdminDashboard adminDashboard = new AdminDashboard();
+                                adminDashboard.Show();
+                            }
+                            else
+                            {
+                                Search search = new Search();
+                                search.Show();
+                            }
                         }
                         else
                         {
@@ -99,8 +107,27 @@ namespace TicketTest
         {
             Close();
         }
+        private static string GetDomainFromEmail(string email)
+        {
+            // Split the email by '@' symbol and get the second part
+            string[] parts = email.Split('@');
+            if (parts.Length > 1)
+            {
+                return parts[1];
+            }
+            return string.Empty;
+        }
 
-      
+        public static bool IsAdminEmail(string email)
+        {
+            // Define the expected domain for admin emails
+            string adminDomain = "trainadmin.com";
 
+            // Get the domain part of the email
+            string domain = GetDomainFromEmail(email);
+
+            // Compare the domain with the admin domain
+            return string.Equals(domain, adminDomain, StringComparison.OrdinalIgnoreCase);
+        }
     }
 }

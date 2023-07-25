@@ -81,7 +81,10 @@
                 </PasswordBox.Template>
             </PasswordBox>
             <TextBlock x:Name="placeholderText" Text="Password" Foreground="#FF635F5F" Margin="32,18,148,0" VerticalAlignment="Top" IsHitTestVisible="False" Visibility="Visible" Grid.Row="3" FontFamily="Arial" FontWeight="Bold"/>
-            <Button x:Name="btnClose" Content="x" HorizontalAlignment="Left" Margin="310,0,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="24" FontFamily="Arial" RenderTransformOrigin="2.125,0.285" Foreground="#FF7B6B6B" Click="btnClose_Click"/>
+            <Image HorizontalAlignment="Left" Height="194" VerticalAlignment="Top" Width="150" Source="/5f2c39b7d1a7cc8f7d452abaeec0717a.jpeg"/>
+            <Image HorizontalAlignment="Left" Height="194" Margin="150,0,0,0" VerticalAlignment="Top" Width="112" Source="/desktop-wallpaper-train-track-travel-full-phone-background-for-iphone-android-lock-screen-phone-background-train-train-tracks-graphy-thumbnail.jpg"/>
+            <Rectangle HorizontalAlignment="Left" Height="194" Margin="264,0,0,0" VerticalAlignment="Top" Width="72" Fill="#FF2364AD"/>
+            <Button x:Name="btnClose" Content="x" HorizontalAlignment="Left" Margin="304,3,0,0" VerticalAlignment="Top" Background="#FF2364AD" BorderBrush="{x:Null}" FontSize="24" FontFamily="Arial" RenderTransformOrigin="2.125,0.285" Foreground="#FFEDEAEA" Click="btnClose_Click" Height="32" Width="27" VerticalContentAlignment="Top" HorizontalContentAlignment="Center"/>
 
 
 

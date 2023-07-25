@@ -60,9 +60,10 @@ namespace TicketTest
             try
             {
                 string username = tbUsername.Text;
+                // use .Password for added security feature
                 string password = passBoxRegister.Password;
                 string confirmPassword = passBoxConfirm.Password;
-
+                // call and open a DB connection
                 using (var cmd = DbConnection.CreateCommand())
                 {
                     // Check if the username already exists in database
@@ -75,6 +76,7 @@ namespace TicketTest
                     {
                         if (password.Equals(confirmPassword))
                         {
+                            //say okkeh
                             // Confirm password, register an open an admin account
                             string query = $"INSERT INTO adminaccount VALUES (@username, @password)";
                             cmd.CommandText = query;
