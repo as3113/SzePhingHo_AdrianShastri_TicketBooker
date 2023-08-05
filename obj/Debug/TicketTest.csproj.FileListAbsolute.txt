@@ -40,3 +40,10 @@ C:\Users\szepi\Desktop\DesktopTicketBooking\obj\Debug\Search.g.cs
 C:\Users\szepi\Desktop\DesktopTicketBooking\obj\Debug\Search.baml
 C:\Users\szepi\Desktop\DesktopTicketBooking\obj\Debug\Testing.g.cs
 C:\Users\szepi\Desktop\DesktopTicketBooking\obj\Debug\Testing.baml
+C:\Users\szepi\Desktop\DesktopTicketBooking\obj\Debug\Payment.g.cs
+C:\Users\szepi\Desktop\DesktopTicketBooking\obj\Debug\Payment.baml
+C:\Users\szepi\Desktop\DesktopTicketBooking\bin\Debug\Aspose.BarCode.dll
+C:\Users\szepi\Desktop\DesktopTicketBooking\bin\Debug\Aspose.BarCode.xml
+C:\Users\szepi\Desktop\DesktopTicketBooking\obj\Debug\ETicket.g.cs
+C:\Users\szepi\Desktop\DesktopTicketBooking\obj\Debug\ETicket.baml
+C:\Users\szepi\Desktop\DesktopTicketBooking\obj\Debug\TicketTest.csproj.CopyComplete
