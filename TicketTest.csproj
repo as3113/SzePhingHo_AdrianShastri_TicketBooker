@@ -38,6 +38,9 @@
     <Reference Include="Aspose.BarCode, Version=23.7.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
       <HintPath>packages\Aspose.BarCode.23.7.0\lib\net47\Aspose.BarCode.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -61,6 +64,9 @@
     <Compile Include="ETicket.xaml.cs">
       <DependentUpon>ETicket.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\DateSearchCriteria.cs" />
+    <Compile Include="Models\Response.cs" />
+    <Compile Include="Models\Ticket.cs" />
     <Compile Include="Payment.xaml.cs">
       <DependentUpon>Payment.xaml</DependentUpon>
     </Compile>
