@@ -52,7 +52,7 @@ namespace TicketTest
         {
 
             // API endpoint for searching tickets based on date
-            string apiUrl = "http://local:7203/api/Ticket/";
+            string apiUrl = "https://localhost:7203/api/Ticket/";
 
 
             using (HttpClient client = new HttpClient())
@@ -73,61 +73,29 @@ namespace TicketTest
                     Date = date
                 };
 
-                string jsonPayload = Newtonsoft.Json.JsonConvert.SerializeObject(searchCriteria);
-                var httpContent = new StringContent(jsonPayload, Encoding.UTF8, "application/json");
+                try
+                {
+                    string jsonPayload = Newtonsoft.Json.JsonConvert.SerializeObject(searchCriteria);
+                    var httpContent = new StringContent(jsonPayload, Encoding.UTF8, "application/json");
 
-                var response = await client.PostAsync("SearchTicketsByDate", httpContent);
+                    var response = await client.PostAsync("SearchTicketsByDate", httpContent);
+                    response.EnsureSuccessStatusCode(); // test
 
-                string responseContent = await response.Content.ReadAsStringAsync();
+                    string responseContent = await response.Content.ReadAsStringAsync();
 
-                Response res = JsonConvert.DeserializeObject<Response>(responseContent);
-                Result.ItemsSource = res.TicketList;
-                // Display the results in the Testing window
-
-
-                // Close the current Search window
-                this.Close();
+                    Response res = JsonConvert.DeserializeObject<Response>(responseContent);
+                    Result.ItemsSource = res.TicketList; // Display the results in the Result data grid
+                    
+                    // Close the current Search window
+                    /*this.Close();*/
+                }
+                catch (HttpRequestException ex)
+                {
+                    MessageBox.Show($"An error occurred while sending the request: {ex.Message}");
+                }
             }
 
         }
-
-        /*private async Task<Response> SearchForTickets(DateSearchCriteria searchCriteria)
-        {
-            try
-            {
-                // API endpoint for searching tickets based on date
-                string apiUrl = "http://local:7203/api/Ticket/SearchTicketsByDate";
-
-                using (HttpClient client = new HttpClient())
-                {
-                    // Set the request headers (if required)
-                    client.BaseAddress = new Uri(apiUrl);
-                    client.DefaultRequestHeaders.Accept.Clear();
-                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-
-                    // Convert the search criteria object to JSON
-                    string json = Newtonsoft.Json.JsonConvert.SerializeObject(searchCriteria);
-                    var content = new StringContent(json, Encoding.UTF8, "application/json");
-
-                    // Send the POST request to the API
-                    HttpResponseMessage response = await client.PostAsync(apiUrl, content);
-                    response.EnsureSuccessStatusCode();
-
-                    // Read the response content as JSON and deserialize to Response object
-                    string responseContent = await response.Content.ReadAsStringAsync();
-                    Response result = Newtonsoft.Json.JsonConvert.DeserializeObject<Response>(responseContent);
-
-                    return result;
-                }
-            }
-            catch (HttpRequestException ex)
-            {
-                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                return null;
-            }
-        }*/
-
-
     }
 
 }
