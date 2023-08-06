@@ -33,7 +33,7 @@
 
             <TextBlock Text="Where do you want to go?" TextWrapping="Wrap" FontSize="24" Margin="16,16,142,74" />
             <Label Content="Label" HorizontalAlignment="Left" Height="0" Margin="169,0,0,0" Grid.Row="1" VerticalAlignment="Center" Width="49"/>
-            <Button x:Name="btnContinue" Click="btnContinue_Click" Content="Continue" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Center" Background="#FF2364AD" BorderBrush="#FF2364AD" Foreground="White" FontSize="18" Width="184" Height="44" Margin="67,0,0,0">
+            <Button x:Name="btnContinue" Click="btnContinue_Click" Content="Continue" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF2364AD" BorderBrush="#FF2364AD" Foreground="White" FontSize="18" Width="184" Height="44" Margin="390,183,0,0" Grid.RowSpan="2">
                 <Button.Template>
                     <ControlTemplate TargetType="{x:Type Button}">
                         <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="5">
@@ -76,7 +76,16 @@
                 <ComboBoxItem Content="First Class"/>
             </ComboBox>
             <DatePicker x:Name="dpDate" HorizontalAlignment="Left" Margin="190,180,0,0" VerticalAlignment="Top" Width="122" RenderTransformOrigin="0.979,-1.042" Grid.RowSpan="2" Height="24"/>
-            <DataGrid x:Name="Result" Grid.Row="3" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,6,0,10" Grid.RowSpan="4"/>
+            <DataGrid x:Name="Result" Grid.Row="1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,45,0,0" Grid.RowSpan="4"/>
+            <Button x:Name="btnBookTicket" Content="Book Ticket" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF2364AD" BorderBrush="#FF2364AD" Foreground="White" FontSize="18" Width="184" Height="44" Margin="390,15,0,0" Grid.Row="5" Click="btnBookTicket_Click">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
 
 
 

@@ -38,7 +38,6 @@ namespace TicketTest
             textBox.Text = "";
         }
 
-
         private void btnSignIn_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -68,8 +67,8 @@ namespace TicketTest
                             }
                             else
                             {
-                                Search search = new Search();
-                                search.Show();
+                                UserDashboard userDashboard = new UserDashboard();
+                                userDashboard.Show();
                             }
                         }
                         else

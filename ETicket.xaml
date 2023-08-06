@@ -14,9 +14,10 @@
         </Grid.RowDefinitions>
         <Image x:Name="barcodeImage" Stretch="Uniform" Margin="77,58,79,55" Grid.Row="1" />
         <Label Content="Payment Successfully Done!" HorizontalAlignment="Left" Margin="42,21,0,0" VerticalAlignment="Top" FontSize="24" Height="42" Width="304"/>
-        <Label x:Name="lbName" Content="Name" HorizontalAlignment="Left" Margin="42,86,0,0" VerticalAlignment="Top" FontSize="22" Height="39" Width="68"/>
-        <Label x:Name="lbSeat" Content="Seat" HorizontalAlignment="Center" Margin="0,86,0,0" VerticalAlignment="Top" FontSize="22" Height="39" Width="69"/>
-        <StackPanel Margin="71,138,73,24"/>
         <Label x:Name="lnItinerary" Content="Train Itinerary" HorizontalAlignment="Left" Margin="42,273,0,0" VerticalAlignment="Top" Grid.RowSpan="2" FontSize="20"/>
+        <Label x:Name="lblIdTrainName" Content="Label" HorizontalAlignment="Left" Margin="27,0,0,0" VerticalAlignment="Center" Width="159" Height="78"/>
+        <Label x:Name="lblToFrom" Content="Label" HorizontalAlignment="Left" Margin="168,99,0,0" VerticalAlignment="Top" Width="215" Height="89"/>
+        <Label x:Name="lbTotalPrice" Content="Label" HorizontalAlignment="Left" Margin="276,193,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Button x:Name="btnViewProfile" Content="View Profile" HorizontalAlignment="Left" Height="45" Margin="257,87,0,0" Grid.Row="2" VerticalAlignment="Top" Width="126" FontSize="20" Click="btnViewProfile_Click"/>
     </Grid>
 </Window>

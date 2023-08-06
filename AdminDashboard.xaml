@@ -6,5 +6,8 @@
         xmlns:local="clr-namespace:TicketTest"
         mc:Ignorable="d"
         Title="AdminDashboard" Height="450" Width="800">
-    <Grid/>
+    <Grid>
+        <DataGrid x:Name="TicketList" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,63,0,0"/>
+        <Label x:Name="lblTicketList" Content="List of Tickets" HorizontalAlignment="Left" Margin="23,10,0,0" VerticalAlignment="Top" FontSize="20"/>
+    </Grid>
 </Window>

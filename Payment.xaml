@@ -6,6 +6,28 @@
         xmlns:local="clr-namespace:TicketTest"
         mc:Ignorable="d"
         Title="Payment" Height="500" Width="600">
+
+    <Window.Resources>
+        <Style x:Key="RoundedButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="LightBlue"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="DarkGray"
+                                BorderThickness="2"
+                                CornerRadius="20">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
     <Grid>
         <Label FontSize="20">Select your payment method</Label>
         <Grid>
@@ -26,9 +48,9 @@
                         <StackPanel>
                             <TextBlock Text="Credit Card 1" FontSize="20" FontWeight="Bold" Margin="0 0 0 10" HorizontalAlignment="Center" />
                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                                <Ellipse Width="50" Height="50" Fill="LightGray" />
-                                <Ellipse Width="50" Height="50" Fill="LightGray" Margin="10 0" />
-                                <Ellipse Width="50" Height="50" Fill="LightGray" />
+                                <Ellipse Width="50" Height="50" Fill="Red" />
+                                <Ellipse Width="50" Height="50" Fill="Gold" Margin="10 0" />
+                               
                             </StackPanel>
                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 10">
                                 <TextBlock Text="****" FontSize="18" />
@@ -51,9 +73,9 @@
                         <StackPanel>
                             <TextBlock Text="Credit Card 1" FontSize="20" FontWeight="Bold" Margin="0 0 0 10" HorizontalAlignment="Center" />
                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                                <Ellipse Width="50" Height="50" Fill="LightGray" />
-                                <Ellipse Width="50" Height="50" Fill="LightGray" Margin="10 0" />
-                                <Ellipse Width="50" Height="50" Fill="LightGray" />
+                                <Ellipse Width="50" Height="50" Fill="DarkOliveGreen" />
+                                <Ellipse Width="50" Height="50" Fill="Silver" Margin="10 0" />
+                                <Ellipse Width="50" Height="50" Fill="Purple" />
                             </StackPanel>
                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 10">
                                 <TextBlock Text="****" FontSize="18" />
@@ -71,11 +93,13 @@
                             </StackPanel>
                         </StackPanel>
                     </Border>
-                    <Label x:Name="lbTotal" Content="Total" HorizontalAlignment="Left" Margin="34,169,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="24" RenderTransformOrigin="2.067,1.844" Grid.Column="1"/>
+                    <Label x:Name="lbTotal" Content="Total:" HorizontalAlignment="Left" Margin="99,169,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="24" RenderTransformOrigin="2.067,1.844" Grid.Column="1"/>
                     <Label x:Name="lbTotalPrice" Content="0.00" HorizontalAlignment="Left" Margin="186,169,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="24" Grid.Column="1"/>
                     <Image HorizontalAlignment="Left" Height="126" Margin="20,27,0,0" Grid.Row="1" VerticalAlignment="Top" Width="226" Source="/ALMY_E61KAC_TransCanadaTrain.jpg"/>
                     <Image HorizontalAlignment="Left" Height="113" Margin="248,27,0,0" Grid.Row="1" VerticalAlignment="Top" Width="172" Grid.ColumnSpan="2" Source="/train.PNG"/>
-                    <Button x:Name="btnPay" Grid.Column="1" Content="Pay" HorizontalAlignment="Left" Margin="150,50,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="36" Width="116" Height="67"/>
+                    <Button x:Name="btnPay" Grid.Column="1" Style="{StaticResource RoundedButtonStyle}" Content="Pay" HorizontalAlignment="Left" Margin="150,50,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="36" Width="116" Height="67" Click="btnPay_Click"/>
+                    <Label x:Name="lblIdTrainName" Content="Label" HorizontalAlignment="Left" Margin="20,151,0,0" Grid.Row="1" VerticalAlignment="Top" Width="159" Height="78"/>
+                    <Label x:Name="lblToFrom" Content="Label" HorizontalAlignment="Left" Margin="161,151,0,0" Grid.Row="1" VerticalAlignment="Top" Width="215" Height="89" Grid.ColumnSpan="2"/>
                 </Grid>
             </Viewbox>
         </Grid>

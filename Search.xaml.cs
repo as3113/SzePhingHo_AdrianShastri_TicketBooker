@@ -50,7 +50,6 @@ namespace TicketTest
 
         private async void btnContinue_Click(object sender, RoutedEventArgs e)
         {
-
             // API endpoint for searching tickets based on date
             string apiUrl = "https://localhost:7203/api/Ticket/";
 
@@ -95,6 +94,24 @@ namespace TicketTest
                 }
             }
 
+        }
+
+        private void btnBookTicket_Click(object sender, RoutedEventArgs e)
+        {
+            // Check if a ticket is selected
+            if (Result.SelectedItem is Ticket selectedTicket)
+            {
+                // Create a new instance of the Payment window
+                Payment paymentWindow = new Payment(selectedTicket);
+
+                // Show the Payment window as a dialog (blocking)
+                paymentWindow.ShowDialog();
+            }
+            else
+            {
+                // Inform the user to select a ticket before booking
+                MessageBox.Show("Please select a ticket from the list before booking.", "Ticket Booking", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
         }
     }
 

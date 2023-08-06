@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Drawing;
 using Aspose.BarCode.Generation;
+using TicketTest.Models;
+
 
 namespace TicketTest
 {
@@ -21,12 +23,26 @@ namespace TicketTest
     /// </summary>
     public partial class ETicket : Window
     {
-        public ETicket()
+
+        public ETicket(Ticket ticket)
         {
             InitializeComponent();
-            GenerateBarcode("1001000010000010001");
+             GenerateBarcode("1001000010000010001"); 
+            /*GenerateBarcode(Convert.ToString(ticket.ticketId));*/
+            
+            string trainId = "Ticket ID: " + ticket.ticketId;
+            string trainName = "\nTrain: " + ticket.train;
+            string departure = "From: " + ticket.departure;
+            string destination = "\nTo: " + ticket.destination;
+            string departureTime = "\nDeparture : " + ticket.departureTime;
+            string arrivalTime = "\nArrival: " + ticket.arrivalTime;
+            string category = "\n" + ticket.category;
+            string seat = "\nSeat: " + ticket.seat;
+            string price = "$" + ticket.price;
 
-           
+            lblIdTrainName.Content = trainId + trainName + category + seat;
+            lblToFrom.Content = departure + departureTime + destination + arrivalTime;
+            lbTotalPrice.Content = price;
         }
         private void GenerateBarcode(string barcodeValue)
         {
@@ -57,6 +73,11 @@ namespace TicketTest
                     barcodeImage.Source = barcodeBitmapImage;
                 }
             }
+        }
+
+        private void btnViewProfile_Click(object sender, RoutedEventArgs e)
+        {
+            UserProfile userProfile = new UserProfile();
         }
     }
 }
