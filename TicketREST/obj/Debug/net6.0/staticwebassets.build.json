@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "r3nkDB4PV48ef9D1VDXkRW6LG5jdwq7RDV2FmHKrjk8=",
+  "Source": "TicketREST",
+  "BasePath": "_content/TicketREST",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
