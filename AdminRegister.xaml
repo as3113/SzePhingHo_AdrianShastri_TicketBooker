@@ -84,6 +84,7 @@
             </PasswordBox>
             <TextBlock x:Name="placeholderConfirmPassword" Text="Confirm Password" Foreground="#FF635F5F" Margin="34,0,111,0" VerticalAlignment="Center" IsHitTestVisible="False" Visibility="Visible" Grid.Row="5" FontFamily="Arial" FontWeight="Bold"/>
             <Image Margin="258,10,10,107" Source="/21269369161530177266-128.png" Stretch="Fill" MouseDown="imgClose_MouseDown"/>
+            <Image Source="ALMY_E61KAC_TransCanadaTrain.jpg" HorizontalAlignment="Center" VerticalAlignment="Top" Stretch="Uniform" Margin="0,55,0,0" Grid.RowSpan="3" Height="187" Width="282" />
             <Image x:Name="imgHome" Margin="10,10,249,102" Source="/14444838041553668337-128.png" Stretch="Fill" MouseDown="imgHome_MouseDown" />
         </Grid>
     </Border>

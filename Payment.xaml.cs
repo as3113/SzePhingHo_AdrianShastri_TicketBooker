@@ -31,8 +31,8 @@ namespace TicketTest
             string trainName = "\nTrain: " + ticket.train;
             string departure = "From: " + ticket.departure;
             string destination = "\nTo: " + ticket.destination;
-            string departureTime = "\nDeparture : " + ticket.departureTime;
-            string arrivalTime = "\nArrival: " + ticket.arrivalTime;
+            string departureTime = "\n"+ ticket.departureTime;
+            string arrivalTime = "\n" + ticket.arrivalTime;
             string category = "\n" + ticket.category;
             string seat = "\nSeat: " + ticket.seat; 
             string price = "$" + ticket.price;
@@ -50,6 +50,12 @@ namespace TicketTest
             
             ETicket eticket = new ETicket(selectedTicket);
             eticket.Show();
+            Close();
+        }
+
+        private void btnClose_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
         }
     }
 }

@@ -106,6 +106,7 @@ namespace TicketTest
 
                 // Show the Payment window as a dialog (blocking)
                 paymentWindow.ShowDialog();
+
             }
             else
             {

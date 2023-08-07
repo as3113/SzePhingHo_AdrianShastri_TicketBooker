@@ -34,15 +34,15 @@ namespace TicketTest
             string trainName = "\nTrain: " + ticket.train;
             string departure = "From: " + ticket.departure;
             string destination = "\nTo: " + ticket.destination;
-            string departureTime = "\nDeparture : " + ticket.departureTime;
-            string arrivalTime = "\nArrival: " + ticket.arrivalTime;
+            string departureTime = "\n" + ticket.departureTime;
+            string arrivalTime = "\n" + ticket.arrivalTime;
             string category = "\n" + ticket.category;
             string seat = "\nSeat: " + ticket.seat;
             string price = "$" + ticket.price;
 
             lblIdTrainName.Content = trainId + trainName + category + seat;
             lblToFrom.Content = departure + departureTime + destination + arrivalTime;
-            lbTotalPrice.Content = price;
+            //lbTotalPrice.Content = price;
         }
         private void GenerateBarcode(string barcodeValue)
         {

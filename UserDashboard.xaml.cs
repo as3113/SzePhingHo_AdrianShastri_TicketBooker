@@ -29,5 +29,10 @@ namespace TicketTest
             Search search = new Search();
             search.Show();
         }
+
+        private void btnClose_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }
